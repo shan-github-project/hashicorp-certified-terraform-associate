@@ -1,7 +1,7 @@
 # Terraform Settings Block
 terraform {
   # Terraform Version
-  required_version = "~> 0.14.6"
+  required_version = "~> 1.3.8"
   required_providers {
     # AWS Provider 
     aws = {
@@ -18,6 +18,6 @@ terraform {
 
 # Provider Block
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
   profile = "default" # Defining it for default profile is Optional
 }
