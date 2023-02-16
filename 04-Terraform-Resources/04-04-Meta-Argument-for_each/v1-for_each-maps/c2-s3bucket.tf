@@ -5,10 +5,10 @@ resource "aws_s3_bucket" "mys3bucket" {
 
   # for_each Meta-Argument
   for_each = {
-    dev  = "my-dapp-bucket"
-    qa   = "my-qapp-bucket"
-    stag = "my-sapp-bucket"
-    prod = "my-papp-bucket"
+    dev  = "my-chainsawapp-bucket"
+    qa   = "my-fidgeapp-bucket"
+    stag = "my-chaosapp-bucket"
+    prod = "my-bansheapp-bucket"
   }
 
   bucket = "${each.key}-${each.value}"
